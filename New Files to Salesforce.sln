@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "New Files to Salesforce", "New Files to Salesforce.dtproj", "{5697486D-4655-499E-BBC8-1C807688D967}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Azure|Default = Azure|Default
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5697486D-4655-499E-BBC8-1C807688D967}.Azure|Default.ActiveCfg = Azure
+		{5697486D-4655-499E-BBC8-1C807688D967}.Azure|Default.Build.0 = Azure
+		{5697486D-4655-499E-BBC8-1C807688D967}.Development|Default.ActiveCfg = Development
+		{5697486D-4655-499E-BBC8-1C807688D967}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B64CB37-EB19-4CB9-95B5-CD4632FC432E}
+	EndGlobalSection
+EndGlobal

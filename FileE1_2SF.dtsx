@@ -1,0 +1,2226 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/26/2023 8:34:33 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="PRX-LPT-188"
+  DTS:CreatorName="PRUDENTRX\Michael.Zingg"
+  DTS:DTSID="{FEF6F162-2538-4D9F-8C93-42594E721497}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5209.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="FileE1_2SF"
+  DTS:PackageType="5"
+  DTS:VersionBuild="101"
+  DTS:VersionGUID="{D094177E-C2C9-421A-9458-C456BF7F2531}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{A3E862D7-991F-4FB5-A10B-656F26CEE4B3}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::Variable1]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HBS Patient ID"
+              DTS:DTSID="{FC85F5B5-FE4B-4AE9-BE2D-804480275903}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Caremark Member Id"
+              DTS:DTSID="{CC2D6796-6111-4826-B19D-294F27404701}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Patient First Name"
+              DTS:DTSID="{C8E9CEF6-46A0-4074-B8A9-03DD6124DB7B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Patient Last Name"
+              DTS:DTSID="{FD8C87F6-41C2-4C63-8069-45A9FE46FD13}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date ofBirth"
+              DTS:DTSID="{8E997D12-2027-42AF-BDBE-EB97D8BEC755}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{8D075CB3-CE40-428B-86B9-6FEC5B9391B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Prescription Number"
+              DTS:DTSID="{28CF88B9-BAB1-412C-8F7A-5583259421B4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fill Number"
+              DTS:DTSID="{B8233236-BF73-42E9-8D9E-8598C82F9660}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date Of Service"
+              DTS:DTSID="{9BB5F1A8-AF1A-4889-9167-48BDB501C1E0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Medispan Drug Name"
+              DTS:DTSID="{2D875379-D402-4B14-86C2-4F8142B64113}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Full GPI"
+              DTS:DTSID="{A29756C8-26AF-4E7E-BA0C-C0BCB4034210}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Full NDC"
+              DTS:DTSID="{F5C62729-79AC-4EA1-99EF-60CC8614C65C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Processing Pharmacy NPI"
+              DTS:DTSID="{95780FD8-2618-433E-8EFE-2C61B3BEFB41}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Primary Claim Number"
+              DTS:DTSID="{2E73456D-395D-49F5-8C05-2627A0F7BD55}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Transaction Type"
+              DTS:DTSID="{6E6E55C6-E239-43D4-A2CB-BD629C00A398}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Manufacturer Paid Dollars"
+              DTS:DTSID="{D0320B8B-D9F7-4C28-98A5-4647DDBFD58D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tracking Number"
+              DTS:DTSID="{D5A0595C-9B79-4EBA-8AEB-ACAEEB4DF0D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tracking Sequence Number"
+              DTS:DTSID="{3EF01979-F797-4F45-8E58-7B3D6FD03AB4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Non Needs Based Copay Card "
+              DTS:DTSID="{F1B1A7CF-DEA3-49E3-8433-B197A190CF3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copay Card Credit Card Ind"
+              DTS:DTSID="{51A3F7CE-3EA3-43F3-8591-0967E7ADF195}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="copay card descr"
+              DTS:DTSID="{99C0241A-B11B-41BF-B201-92FE7A10D622}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copay Card BIN"
+              DTS:DTSID="{7A75E4C7-88D7-41CD-8598-BB4DA48F52DB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copay Card PCN"
+              DTS:DTSID="{B564B75C-510F-40C1-80B7-AB802C77C457}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copay Card Group"
+              DTS:DTSID="{8C5DB0F3-16D1-49A6-8B1E-97E8879DCDCD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copay Card Member Nbr"
+              DTS:DTSID="{6A70B54A-5209-44BA-B71F-317DBEBDB316}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="copay card eff dt"
+              DTS:DTSID="{59DE3416-650F-4994-947F-D4F3E3DA16C7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="copay card term dt"
+              DTS:DTSID="{3EDEB1BB-D28D-460E-8FE3-2E93D9C39C0B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PRX-Dev01]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{48AE0764-F18C-482D-AEB7-EF6850EFDEDE}"
+      DTS:ObjectName="PRX-Dev01">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=sql-prudentrx-pru.database.windows.net;User ID=sql.pru.admin;Initial Catalog=PRX-Dev01;Provider=SQLOLEDB.1;Application Name=SSIS-Package-{48AE0764-F18C-482D-AEB7-EF6850EFDEDE}sql-prudentrx-pru.database.windows.net.PRX-Dev01.sql.pru.admin1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8ONquwXzTUCenhVuvtUM4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABTKH/nAzcK2DATIfsZMWw8AAAAAASAAACgAAAAEAAAAB5SbaYfBeyS/d5SruzgVWxIAAAAy5K2ZZU5zx7zk1MF6sNHIFPqVozrcOW+WuNbzX1HspQtsSXYF9Ye2DPnANLybb1uJ0fcSBSbPPApetR+OVFV3Z63axVTFTG4FAAAAOLjXXODRFK9kO/NTCZPItbn39Hl</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SMTP Connection Manager]"
+      DTS:CreationName="SMTP"
+      DTS:DTSID="{78B62130-1E02-4195-ADFA-5DD1C8982A97}"
+      DTS:ObjectName="SMTP Connection Manager">
+      <DTS:ObjectData>
+        <SmtpConnectionManager
+          ConnectionString="SmtpServer=mail.prudentrxapps.com;UseWindowsAuthentication=True;EnableSsl=True;"
+          ConnectByProxy="False" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="11"
+      DTS:DTSID="{B0E7295B-AA7C-4608-9AAA-7053FBC2BE51}"
+      DTS:ObjectName="filename"
+      DTS:Required="True">
+      <DTS:Property
+        DTS:DataType="11"
+        DTS:Name="ParameterValue">0</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{48D97EE5-B407-4BD4-8806-92B5EAE285C4}"
+      DTS:ObjectName="pmDaysBack">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">0</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E82EEAC5-24AF-4796-94FC-F012FEEC3CCB}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="(DT_WSTR, 4) YEAR(DATEADD(&quot;day&quot;,-1,GETDATE()))&#xA;+RIGHT(&quot;0&quot; + (DT_WSTR, 2) DATEPART(&quot;MM&quot;, DATEADD(&quot;day&quot;, -1, GETDATE())),2)&#xA;+RIGHT(&quot;0&quot; + (DT_WSTR, 2) DATEPART(&quot;DD&quot;, DATEADD(&quot;day&quot;, - @[$Package::pmDaysBack] , GETDATE())),2)"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varFileDate">
+      <DTS:VariableValue
+        DTS:DataType="8">20230531</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{6070A967-A2E4-4DF0-9B28-083FE913BCD3}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;Specialty_To_PrudentRx_PostShip-Copaycard_&quot; + @[User::varFileDate] + &quot;*.txt&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varFileName">
+      <DTS:VariableValue
+        DTS:DataType="8">Specialty_To_PrudentRx_PostShip-Copaycard_20230531*.txt</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5F88F6BB-E7D4-49F6-A47D-07F72E105932}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;\\\\prx-fs01\\SFTP_2\\SRX_CopayProgram\\Transactions\\E1\\&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varFilePath">
+      <DTS:VariableValue
+        DTS:DataType="8">\\prx-fs01\SFTP_2\SRX_CopayProgram\Transactions\E1\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F29707F2-92CC-4223-9E20-B5261848BF5D}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Variable1">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{FF97A9C6-352D-49F2-9EDB-CEAA772BC07C}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="varRowNum">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D56C3D60-3C34-4D7B-9245-A11FAFC35144}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;mnt820@webtransport.caremark.com -pw Nfz#559k -be -batch -b get_E1_SFTP.bat&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varSFTPArguments">
+      <DTS:VariableValue
+        DTS:DataType="8">mnt820@webtransport.caremark.com -pw Nfz#559k -be -batch -b get_E1_SFTP.bat</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1F583516-6493-4D00-997C-55A16CADE21B}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;C:\\Program Files\\PuTTY\\psftp.exe&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varSFTPExecutable">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Program Files\PuTTY\psftp.exe</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{00D17520-533B-4564-A4E1-753BFF8BF265}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;C:\\Users\\Michael.Zingg\\SFTP&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varSFTPWorkingDir">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\Michael.Zingg\SFTP</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A92E25E7-7612-41B6-A818-328F73B7C390}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;[dbo].[stg_File_E1] &quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varSQLTableName">
+      <DTS:VariableValue
+        DTS:DataType="8">[dbo].[stg_File_E1] </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A0E1B366-AF71-428E-B94C-BFF3F4310D05}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;There were &quot; +  (DT_WSTR, 1000) @[User::varRowNum]  +  &quot; rows inserted into &quot; + &quot;'&quot; + @[User::varSQLTableName]  + &quot;'&quot; + &quot; from &quot; +  &quot;'&quot; +  @[User::varFilePath] + @[User::varFileName] + &quot;'&quot; + &quot;.&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varSuccessEmail">
+      <DTS:VariableValue
+        DTS:DataType="8">There were 0 rows inserted into '[dbo].[stg_File_E1] ' from '\\prx-fs01\SFTP_2\SRX_CopayProgram\Transactions\E1\Specialty_To_PrudentRx_PostShip-Copaycard_20230531*.txt'.</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Loops thru Files Enumerator"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{0ECA4567-1B67-4B58-8A4B-88CE88E96A5A}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Loops thru Files Enumerator">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{38750BAE-DB76-4F85-894C-5D0102FD61FE}"
+        DTS:ObjectName="{38750BAE-DB76-4F85-894C-5D0102FD61FE}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[User::varFilePath]</DTS:PropertyExpression>
+        <DTS:PropertyExpression
+          DTS:Name="FileSpec">@[User::varFileName]</DTS:PropertyExpression>
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="\\prx-fs01\SFTP_2\SRX_CopayProgram\Transactions\E1\" />
+            <FEFEProperty
+              FileSpec="Specialty_To_PrudentRx_PostShip-Copaycard_20230531*.txt" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{36044C76-B2BE-45D2-84DA-581BE2A22376}"
+          DTS:IncludeInDebugDump="2345"
+          DTS:Namespace="User"
+          DTS:ObjectName="Filename">
+          <DTS:VariableValue
+            DTS:DataType="8"
+            xml:space="preserve"></DTS:VariableValue>
+        </DTS:Variable>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{FDFC5AE2-E6AB-4602-86F4-1120E225E442}"
+          DTS:IncludeInDebugDump="2345"
+          DTS:Namespace="User"
+          DTS:ObjectName="Variable">
+          <DTS:VariableValue
+            DTS:DataType="8">varFullyQualifiedFileName</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Loops thru Files Enumerator\Delete Footer Row"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{FC1726CC-041B-42BE-984E-040D0850F12A}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Delete Footer Row"
+          DTS:ThreadHint="2">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{48AE0764-F18C-482D-AEB7-EF6850EFDEDE}"
+              SQLTask:SqlStatementSource="DELETE FROM [dbo].[stg_File_E1]&#xA;where [HBS Patient ID] like 'F%'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Loops thru Files Enumerator\Delete Records In in table IF EXISTS"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{C8D45298-44B2-4DAB-B27E-BD24E37A30F5}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Delete Records In in table IF EXISTS"
+          DTS:ThreadHint="2">
+          <DTS:Variables />
+          <DTS:PropertyExpression
+            DTS:Name="SqlStatementSource">REPLACE("DELETE FROM  " +  @[User::varSQLTableName] + " WHERE filename LIKE '"+ "%" + @[User::varFileDate] + "%" + "'", "*", "%")</DTS:PropertyExpression>
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{48AE0764-F18C-482D-AEB7-EF6850EFDEDE}"
+              SQLTask:SqlStatementSource="DELETE FROM  [dbo].[stg_File_E1]  WHERE filename LIKE '%20230531%'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Loops thru Files Enumerator\DFT Import Data"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{80BF78BD-939C-4417-BDA0-2482C5CE6E92}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="DFT Import Data"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="E1 Flat File"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">true</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName">filename</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[HBS Patient ID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[HBS Patient ID]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[HBS Patient ID]"
+                          name="HBS Patient ID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Caremark Member Id]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Caremark Member Id]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Caremark Member Id]"
+                          name="Caremark Member Id"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Patient First Name]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Patient First Name]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Patient First Name]"
+                          name="Patient First Name"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Patient Last Name]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Patient Last Name]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Patient Last Name]"
+                          name="Patient Last Name"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Date ofBirth]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Date ofBirth]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Date ofBirth]"
+                          name="Date ofBirth"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Gender]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Gender]"
+                          name="Gender"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Prescription Number]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Prescription Number]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Prescription Number]"
+                          name="Prescription Number"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Fill Number]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Fill Number]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Fill Number]"
+                          name="Fill Number"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Date Of Service]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Date Of Service]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Date Of Service]"
+                          name="Date Of Service"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Medispan Drug Name]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Medispan Drug Name]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Medispan Drug Name]"
+                          name="Medispan Drug Name"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Full GPI]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Full GPI]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Full GPI]"
+                          name="Full GPI"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Full NDC]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Full NDC]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Full NDC]"
+                          name="Full NDC"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Processing Pharmacy NPI]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Processing Pharmacy NPI]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Processing Pharmacy NPI]"
+                          name="Processing Pharmacy NPI"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Primary Claim Number]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Primary Claim Number]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Primary Claim Number]"
+                          name="Primary Claim Number"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Transaction Type]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Transaction Type]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Transaction Type]"
+                          name="Transaction Type"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Manufacturer Paid Dollars]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Manufacturer Paid Dollars]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Manufacturer Paid Dollars]"
+                          name="Manufacturer Paid Dollars"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Tracking Number]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Tracking Number]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Tracking Number]"
+                          name="Tracking Number"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Tracking Sequence Number]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Tracking Sequence Number]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Tracking Sequence Number]"
+                          name="Tracking Sequence Number"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Non Needs Based Copay Card ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Non Needs Based Copay Card ]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Non Needs Based Copay Card ]"
+                          name="Non Needs Based Copay Card "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Copay Card Credit Card Ind]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Copay Card Credit Card Ind]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Copay Card Credit Card Ind]"
+                          name="Copay Card Credit Card Ind"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[copay card descr]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[copay card descr]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[copay card descr]"
+                          name="copay card descr"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Copay Card BIN]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Copay Card BIN]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Copay Card BIN]"
+                          name="Copay Card BIN"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Copay Card PCN]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Copay Card PCN]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Copay Card PCN]"
+                          name="Copay Card PCN"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Copay Card Group]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Copay Card Group]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Copay Card Group]"
+                          name="Copay Card Group"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Copay Card Member Nbr]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Copay Card Member Nbr]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Copay Card Member Nbr]"
+                          name="Copay Card Member Nbr"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[copay card eff dt]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[copay card eff dt]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[copay card eff dt]"
+                          name="copay card eff dt"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[copay card term dt]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[copay card term dt]"
+                          length="255"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[copay card term dt]"
+                          name="copay card term dt"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[filename]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[filename]"
+                          length="500"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[filename]"
+                          name="filename"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[HBS Patient ID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="HBS Patient ID" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Caremark Member Id]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Caremark Member Id" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Patient First Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Patient First Name" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Patient Last Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Patient Last Name" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Date ofBirth]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Date ofBirth" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Gender" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Prescription Number]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Prescription Number" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Fill Number]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Fill Number" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Date Of Service]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Date Of Service" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Medispan Drug Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Medispan Drug Name" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Full GPI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Full GPI" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Full NDC]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Full NDC" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Processing Pharmacy NPI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Processing Pharmacy NPI" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Primary Claim Number]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Primary Claim Number" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Transaction Type]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Transaction Type" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Manufacturer Paid Dollars]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Manufacturer Paid Dollars" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Tracking Number]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Tracking Number" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Tracking Sequence Number]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Tracking Sequence Number" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Non Needs Based Copay Card ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Non Needs Based Copay Card " />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Copay Card Credit Card Ind]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Copay Card Credit Card Ind" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[copay card descr]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="copay card descr" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Copay Card BIN]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Copay Card BIN" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Copay Card PCN]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Copay Card PCN" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Copay Card Group]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Copay Card Group" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[Copay Card Member Nbr]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Copay Card Member Nbr" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[copay card eff dt]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="copay card eff dt" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[copay card term dt]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="copay card term dt" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].ExternalColumns[filename]"
+                          dataType="wstr"
+                          length="260"
+                          name="filename" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Error Output].Columns[filename]"
+                          dataType="wstr"
+                          length="260"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Error Output].Columns[filename]"
+                          name="filename" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="E1 Staging Table"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[stg_File_E1]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[PRX-Dev01]"
+                      connectionManagerRefId="Package.ConnectionManagers[PRX-Dev01]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[HBS Patient ID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="HBS Patient ID"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[HBS Patient ID]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[HBS Patient ID]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Caremark Member Id]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Caremark Member Id"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Caremark Member Id]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Caremark Member Id]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Patient First Name]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Patient First Name"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Patient First Name]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Patient First Name]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Patient Last Name]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Patient Last Name"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Patient Last Name]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Patient Last Name]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Date ofBirth]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Date ofBirth"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Date ofBirth]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Date ofBirth]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Gender]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Gender"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Gender]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Prescription Number]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Prescription Number"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Prescription Number]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Prescription Number]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Fill Number]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Fill Number"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Fill Number]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Fill Number]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Date Of Service]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Date Of Service"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Date Of Service]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Date Of Service]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Medispan Drug Name]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Medispan Drug Name"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Medispan Drug Name]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Medispan Drug Name]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Full GPI]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Full GPI"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Full GPI]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Full GPI]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Full NDC]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Full NDC"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Full NDC]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Full NDC]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Processing Pharmacy NPI]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Processing Pharmacy NPI"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Processing Pharmacy NPI]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Processing Pharmacy NPI]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Primary Claim Number]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Primary Claim Number"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Primary Claim Number]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Primary Claim Number]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Transaction Type]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Transaction Type"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Transaction Type]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Transaction Type]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Manufacturer Paid Dollars]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Manufacturer Paid Dollars"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Manufacturer Paid Dollars]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Manufacturer Paid Dollars]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Tracking Number]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Tracking Number"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Tracking Number]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Tracking Number]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Tracking Sequence Number]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Tracking Sequence Number"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Tracking Sequence Number]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Tracking Sequence Number]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Non Needs Based Copay Card ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Non Needs Based Copay Card "
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Non Needs Based Copay Card ]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Non Needs Based Copay Card ]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Copay Card Credit Card Ind]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Copay Card Credit Card Ind"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Copay Card Credit Card Ind]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Copay Card Credit Card Ind]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[copay card descr]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="copay card descr"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[copay card descr]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[copay card descr]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Copay Card BIN]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Copay Card BIN"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Copay Card BIN]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Copay Card BIN]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Copay Card PCN]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Copay Card PCN"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Copay Card PCN]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Copay Card PCN]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Copay Card Group]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Copay Card Group"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Copay Card Group]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Copay Card Group]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[Copay Card Member Nbr]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Copay Card Member Nbr"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Copay Card Member Nbr]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[Copay Card Member Nbr]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[copay card eff dt]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="copay card eff dt"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[copay card eff dt]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[copay card eff dt]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[copay card term dt]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="copay card term dt"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[copay card term dt]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[copay card term dt]" />
+                        <inputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].Columns[filename]"
+                          cachedDataType="wstr"
+                          cachedLength="500"
+                          cachedName="filename"
+                          externalMetadataColumnId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[filename]"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output].Columns[filename]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[HBS Patient ID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="HBS Patient ID" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Caremark Member Id]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Caremark Member Id" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Patient First Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Patient First Name" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Patient Last Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Patient Last Name" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Date ofBirth]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Date ofBirth" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Gender" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Prescription Number]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Prescription Number" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Fill Number]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Fill Number" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Date Of Service]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Date Of Service" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Medispan Drug Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Medispan Drug Name" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Full GPI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Full GPI" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Full NDC]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Full NDC" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Processing Pharmacy NPI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Processing Pharmacy NPI" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Primary Claim Number]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Primary Claim Number" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Transaction Type]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Transaction Type" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Manufacturer Paid Dollars]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Manufacturer Paid Dollars" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Tracking Number]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Tracking Number" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Tracking Sequence Number]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Tracking Sequence Number" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Non Needs Based Copay Card ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Non Needs Based Copay Card " />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Copay Card Credit Card Ind]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Copay Card Credit Card Ind" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[copay card descr]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="copay card descr" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Copay Card BIN]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Copay Card BIN" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Copay Card PCN]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Copay Card PCN" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Copay Card Group]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Copay Card Group" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[Copay Card Member Nbr]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Copay Card Member Nbr" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[copay card eff dt]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="copay card eff dt" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[copay card term dt]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="copay card term dt" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[filename]"
+                          dataType="wstr"
+                          length="500"
+                          name="filename" />
+                        <externalMetadataColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input].ExternalColumns[date_modified]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="date_modified" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Loops thru Files Enumerator\DFT Import Data\Row Count"
+                  componentClassID="Microsoft.RowCount"
+                  contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+                  name="Row Count">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable to hold the row count."
+                      name="VariableName">User::varRowNum</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Loops thru Files Enumerator\DFT Import Data\Row Count.Inputs[Row Count Input 1]"
+                      hasSideEffects="true"
+                      name="Row Count Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Loops thru Files Enumerator\DFT Import Data\Row Count.Outputs[Row Count Output 1]"
+                      name="Row Count Output 1"
+                      synchronousInputId="Package\Loops thru Files Enumerator\DFT Import Data\Row Count.Inputs[Row Count Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Loops thru Files Enumerator\DFT Import Data.Paths[Flat File Source Output]"
+                  endId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Loops thru Files Enumerator\SFTP Get E1 File"
+          DTS:CreationName="Microsoft.ExecuteProcess"
+          DTS:Description="Execute Process Task"
+          DTS:DTSID="{afe04486-4e3c-444b-a14d-5f2510136b27}"
+          DTS:ExecutableType="Microsoft.ExecuteProcess"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="SFTP Get E1 File"
+          DTS:ThreadHint="2">
+          <DTS:Variables />
+          <DTS:PropertyExpression
+            DTS:Name="Arguments">@[User::varSFTPArguments]</DTS:PropertyExpression>
+          <DTS:PropertyExpression
+            DTS:Name="Executable">@[User::varSFTPExecutable]</DTS:PropertyExpression>
+          <DTS:PropertyExpression
+            DTS:Name="WorkingDirectory">@[User::varSFTPWorkingDir]</DTS:PropertyExpression>
+          <DTS:ObjectData>
+            <ExecuteProcessData
+              Executable="C:\Program Files\PuTTY\psftp.exe"
+              Arguments="mnt820@webtransport.caremark.com -pw Nfz#559k -be -batch -b get_E1_SFTP.bat"
+              WorkingDirectory="C:\Users\Michael.Zingg\SFTP"
+              WindowStyle="Hidden" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Loops thru Files Enumerator.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{D0C0D64F-9F4A-403A-A820-CA70D6CF17A8}"
+          DTS:Expression="@[$Package::filename]"
+          DTS:From="Package\Loops thru Files Enumerator\Delete Records In in table IF EXISTS"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Loops thru Files Enumerator\DFT Import Data" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Loops thru Files Enumerator.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{4D2E393A-4E4F-486A-ADA2-C5F1E3236C5B}"
+          DTS:From="Package\Loops thru Files Enumerator\DFT Import Data"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Loops thru Files Enumerator\Delete Footer Row" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Loops thru Files Enumerator.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{16FA3836-5039-41E5-A8C1-F0379F421CA4}"
+          DTS:From="Package\Loops thru Files Enumerator\SFTP Get E1 File"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\Loops thru Files Enumerator\Delete Records In in table IF EXISTS" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{902551CD-030C-4A56-8DDF-E692D5F21235}"
+          DTS:ObjectName="{902551CD-030C-4A56-8DDF-E692D5F21235}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::Variable1" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Send Import Failure Email"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Send Mail Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{ed5e4df3-afba-42ac-899f-bc45f7a3f4f6}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Send Import Failure Email"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData />
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Send Import Success Email"
+      DTS:CreationName="Microsoft.SendMailTask"
+      DTS:Description="Send Mail Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{8E35F89E-836E-454A-A50D-673C845E1EEF}"
+      DTS:ExecutableType="Microsoft.SendMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Send Import Success Email"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SendMailTask:SendMailTaskData
+          SendMailTask:SMTPServer="{78B62130-1E02-4195-ADFA-5DD1C8982A97}"
+          SendMailTask:From="michael.zingg@prudentrx.com"
+          SendMailTask:To="michael.zingg@prudentrx.com"
+          SendMailTask:Subject="E1 Records Report"
+          SendMailTask:MessageSource="[# of records] was imported into [SQL env] succefully for [file]. " xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        <NodeLayout
+          Size="168,42.6666666666667"
+          Id="Package\Loops thru Files Enumerator\Delete Footer Row"
+          TopLeft="93.8333256219826,295.140348390556" />
+        <NodeLayout
+          Size="254.666666666667,42.6666666666667"
+          Id="Package\Loops thru Files Enumerator\Delete Records In in table IF EXISTS"
+          TopLeft="57.9166625874739,125.736839363202" />
+        <NodeLayout
+          Size="158.666666666667,42.6666666666667"
+          Id="Package\Loops thru Files Enumerator\DFT Import Data"
+          TopLeft="100.249988991767,211.315785770024" />
+        <EdgeLayout
+          Id="Package\Loops thru Files Enumerator.PrecedenceConstraints[Constraint]"
+          TopLeft="182.416659122954,168.403506029869">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,42.912279740155"
+              Start="0,0"
+              End="0,35.412279740155">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.412279740155" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Loops thru Files Enumerator.PrecedenceConstraints[Constraint 1]"
+          TopLeft="178.708323973541,253.982452436691">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,41.1578959538656"
+              Start="0,0"
+              End="0,33.6578959538656">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.6578959538656" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="162.666666666667,42.6666666666667"
+          Id="Package\Loops thru Files Enumerator\SFTP Get E1 File"
+          TopLeft="73.4583267116301,25.0701746948593" />
+        <EdgeLayout
+          Id="Package\Loops thru Files Enumerator.PrecedenceConstraints[Constraint 2]"
+          TopLeft="154.791660044963,67.736841361526">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="30.4583358758438,57.999998001676"
+              Start="0,0"
+              End="30.4583358758438,50.499998001676">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.999999000838" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.999999000838"
+                    Point2="0,28.999999000838"
+                    Point3="4,28.999999000838" />
+                  <mssgle:LineSegment
+                    End="26.4583358758438,28.999999000838" />
+                  <mssgle:CubicBezierSegment
+                    Point1="26.4583358758438,28.999999000838"
+                    Point2="30.4583358758438,28.999999000838"
+                    Point3="30.4583358758438,32.999999000838" />
+                  <mssgle:LineSegment
+                    End="30.4583358758438,50.499998001676" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="507.333333333334,440.666666666667"
+          Size="507.333333333334,484"
+          Id="Package\Loops thru Files Enumerator"
+          TopLeft="1.24999994412045,82.1052628273449" />
+        <AnnotationLayout
+          Text="* Count of records for email&#xA;* SF connection upsert &#xA;* Azure research &#xA;* File system deploy? Azure deploy? &#xD;&#xA;* Change psftp step paths (vars) before deployment&#xD;&#xA;* Change 'download to' and txt file path (varFilePath)&#xD;&#xA;   before deployment&#xD;&#xA;* Error messaging/file count&#xD;&#xA;"
+          ParentId="Package"
+          Size="360,176"
+          Id="288b5364-5c6a-450f-a614-c20baee53d2f"
+          TopLeft="558.041645236934,96.8947387427672">
+          <AnnotationLayout.FontInfo>
+            <mssge:FontInfo
+              Family="Tahoma"
+              Size="14"
+              Color="#FF008000">
+              <mssge:FontInfo.TextDecorations>
+                <av:TextDecorationCollection />
+              </mssge:FontInfo.TextDecorations>
+            </mssge:FontInfo>
+          </AnnotationLayout.FontInfo>
+        </AnnotationLayout>
+        <NodeLayout
+          Size="210.666666666667,42.6666666666667"
+          Id="Package\Send Import Success Email"
+          TopLeft="574.541637525584,384.614031684558" />
+        <NodeLayout
+          Size="202.666666666667,42.6666666666667"
+          Id="Package\Send Import Failure Email"
+          TopLeft="775.791628529008,380.789469064026" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Loops thru Files Enumerator\DFT Import Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="161.333333333334,42.6666666666667"
+          Id="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table"
+          TopLeft="92.4999958649279,203.192980232441" />
+        <NodeLayout
+          Size="132,42.6666666666667"
+          Id="Package\Loops thru Files Enumerator\DFT Import Data\Row Count"
+          TopLeft="293.749986868352,109.473683008527" />
+        <NodeLayout
+          Size="133.333333333334,42.6666666666667"
+          Id="Package\Loops thru Files Enumerator\DFT Import Data\E1 Flat File"
+          TopLeft="98.7499955855311,34.2105259401647" />
+        <EdgeLayout
+          Id="Package\Loops thru Files Enumerator\DFT Import Data.Paths[Flat File Source Output]"
+          TopLeft="169.291662391896,76.8771926068313">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,126.31578762561"
+              Start="0,0"
+              End="0,118.81578762561">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,118.81578762561" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Loops thru Files Enumerator\DFT Import Data\E1 Staging Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
